@@ -13,7 +13,7 @@ PORT_NUMBER = 8080
 def main():
     """Starting point for this app """
     try:
-        server = socketserver.TCPServer(('', 8080), ImageServerHandler)
+        server = socketserver.TCPServer(('', 8000), ImageServerHandler)
         print('Started httpserver on port ', PORT_NUMBER)
         server.serve_forever()
 
